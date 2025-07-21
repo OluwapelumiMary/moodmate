@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMate Tracker Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MoodMate Tracker</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2><span class="emoji">📝</span> Mood & Habit Check-in</h2>
+            <div id="welcome" class="welcome" style="margin-bottom:1.2em; background:#e3f0ff; border-radius:8px; padding:1em;">
+                <strong><span class="emoji">😊</span> Welcome to MoodMate - Your Daily Mood & Habit Tracker</strong>
+                <br>
+                <span style="color:#2563eb;">
+                    <span class="emoji">🌱</span> About MoodMate Tracker <span class="emoji">🌱</span><br>
+                    MoodMate was created as a simple tool to help you reflect daily, track habits, and support your emotional well-being.<br>
+                    By checking in with yourself regularly, you take control of your growth journey — one day at a time.<br>
+                    <em>Version: 1.0<br>
+                    Created by: Oluwapelumi Mary</em>
+                </span>
+            </div>
+            <div id="quote" class="quote" style="margin-bottom:1em; color:#eb6e25; font-style:italic;"></div>
+            <form id="moodForm">
+                <input type="text" id="nameInput" placeholder="Your Name" required><br>
+                <label for="ageInput">Your age group:</label>
+                <select id="ageInput" required>
+                    <option value="">Select</option>
+                    <option value="teen">Teen</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select><br>
+                <label for="goalInput"> One goal you have this week?:
+                <label for="goalInput" style="display:none;">Goal Category:</label>
+                    <select id="goalInput" required>
+                        <option value="">Select</option>
+                        <option value="health">Health</option>
+                        <option value="study">Study</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal Growth</option>
+                        <option value="social">Social Connection</option>
+                    </select><br>
+                <label for="goalInput">Goal Description:</label>
+                <input type="text" id="goalInput" placeholder="Your weekly goal" required><br>
+                <label for="reflectInput">When do you prefer to reflect?</label>
+                <select id="reflectInput" required>
+                    <option value="">Select</option>
+                    <option value="morning">Morning</option>
+                    <option value="night">Night</option>
+                    <option value="anytime">Anytime</option>
+                </select><br>
+                <input type="text" id="moodInput" placeholder="How are you feeling today?" required><br>
+                <label>Did you sleep well last night?</label>
+                <select id="sleepInput">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+                <label>Do you like eating breakfast before drinking water?</label>
+                <select id="eatingInput">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+                <label>Do you enjoy morning workout?</label>
+                <select id="exerciseInput">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="response" class="output"></div>
+        </div>
+    </main>
+</body>
+</html>

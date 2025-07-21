@@ -1,0 +1,104 @@
+body {
+    background: #f6f8fc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(79, 155, 255);
+    color: #181717;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+
+.container {
+    background: #fff;
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 2rem 2rem 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+input[type="text"], select {
+    padding: 0.6rem;
+    color: #000000d5;
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+
+button[type="submit"] {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.8rem;
+}
+
+button[type="submit"]:hover{
+    background: #388e3c;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.output {
+    margin-top: 1.5rem;
+    background: #e3f0ff;
+    border-radius: 8px;
+    padding: 1.5rem; /* Increased padding for better spacing */
+    color: #1a237e;
+    font-size: 1.25rem; /* Increased font size for better readability */
+    text-align: center;  /* Centered text for better presentation */
+    min-height: 60px;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+    word-break: break-word;
+}
+
+.output strong {
+    color: #388e3c;
+}
+.emoji {
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+    vertical-align: middle; /* Align emoji with text */
+}
+.thankyou {
+    margin-top: 1.5em;
+    color: #4f8cff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1.5rem  1rem ;
+    }
+    .output {
+        font-size: 1rem;
+    }
+}
+
+/* Removed JavaScript code that was incorrectly placed in the CSS file */
